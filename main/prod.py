@@ -1,3 +1,10 @@
+import sys
+
+if sys.version_info >= (3, 12, 0):
+    import six
+    sys.modules['kafka.vendor.six.moves'] = six.moves
+
+
 import json
 
 from kafka import KafkaProducer
@@ -21,3 +28,4 @@ for i in range(10):
 kafka_prod.flush()
 kafka_prod.close()
 
+print('Sending: DONE')

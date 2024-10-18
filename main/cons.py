@@ -1,3 +1,10 @@
+import sys
+
+if sys.version_info >= (3, 12, 0):
+    import six
+    sys.modules['kafka.vendor.six.moves'] = six.moves
+
+
 import json
 
 from kafka import KafkaConsumer
@@ -17,4 +24,5 @@ consumer = KafkaConsumer(
 )
 
 for message in consumer:
+    print('='*20)
     print(f"Received: {message.value}")

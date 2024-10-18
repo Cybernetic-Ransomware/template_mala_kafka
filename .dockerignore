@@ -1,0 +1,3 @@
+### basic_deploy_dockerignore template
+.git
+__pycache__
