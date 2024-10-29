@@ -12,7 +12,7 @@ Quick implementation of a containerized Kafka instance
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Cybernetic-Ransomware/mala_kafka_2.git
+    git clone https://github.com/Cybernetic-Ransomware/template_mala_kafka.git
     ```
 2. Create a virtual environment:
     ```bash
