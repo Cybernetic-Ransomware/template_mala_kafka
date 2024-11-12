@@ -27,15 +27,15 @@ Quick implementation of a containerized Kafka instance
       ```bash
       source .venv/bin/activate
       ```
-4Install dependencies:
+4. Install dependencies:
     ```bash
     pip install kafka-python==2.0.2 six==1.16.0
     ```
-5Run Docker Desktop and start the Kafka container:
+5. Run Docker Desktop and start the Kafka container:
     ```bash
     docker-compose up --build
     ```
-6Run the consumer and producer to test message sending:
+6. Run the consumer and producer to test message sending:
     ```bash
     python ./main/cons.py
     python ./main/prod.py
